@@ -1,0 +1,32 @@
+/*Variables
+ note1 : réel, note2: réel, c1:entier, c2:entier, m:moyenne
+ DEBUT
+ AFFICHER:"Entrer la valeur de la première note"
+ LIRE: (note1)
+ AFFICHER:"Entrer son coeffiscient c1"
+ LIRE: (note2)
+ AFFICHER: "Entrer la valeur de la deuxième note"
+ LIRE: (note2)
+ AFFICHER:"Entrer son coefficient c2"
+ LIRE: "c2"
+ m=((note*c1)+(note2*c2))/(c1+c2)
+ AFFICHER: (m)
+ FIN
+ */
+ #include<stdio.h>
+  int main()
+   {
+    int note1, note2, c1, c2, m;
+    printf("Entrer la valeur de la première note\n");
+    scanf("%d", &note1);
+    printf("Entrer son coeffiscient c1\n");
+    scanf("%d", &c1);
+    printf("Entrer la valeur de la deuxième note\n");
+    scanf("%d", &note2);
+    printf("Enter son coeffiscient\n");
+    scanf("%d", &c2);
+    m=((note1*c1)+(note2*c2))/(c1+c2);
+    printf("La moyenne est %d\n", m);
+    return 0;
+   }
+ 

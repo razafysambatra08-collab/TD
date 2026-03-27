@@ -1,0 +1,34 @@
+/*variable : 
+a:réel, b:réel
+D
+ AFFICHER : "Entrer la valeur de a"  
+  LIRE (a)
+ AFFICHER : "Entrer la valeur de b"
+ LIRE (b)
+  SI ((a>0 et b>0) ou (a<0 && b<0)) ALORS
+  AFFICHER: " leur produit est positif"
+  FIN SI
+  SI ((a<0 et b>0) ou (a>0 et b<0)) ALORS
+  AFFICHER :"leur produit est négatif"
+  FIN SI
+Fin
+*/
+#include<stdio.h>
+  int main ()
+  {
+   int a, b; 
+   printf("Entrer la valeur de a\n"); 
+   scanf("%d", &a); 
+   printf("Entrer la valeur de b\n"); 
+   scanf("%d", &b); 
+   if((a>0 && b>0) || (a<0 && b<0)) 
+    {
+     printf("leur produit est positif\n"); 
+    }
+   else if ((a<0 && b>0) || (a>0 && b<0)) 
+    {
+     printf("leur produit est négatif\n"); 
+    }
+  return 0;
+  }
+     

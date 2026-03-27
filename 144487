@@ -1,0 +1,30 @@
+/* Variables:
+ note1:réel
+ note2:réel
+ s:somme
+ m:moyenne
+ DEBUT
+ AFFICHER:"Entrer la valeur de note1"
+ LIRE: (note1)
+ AFFICHER"Entrer la valeur de note2"
+ LIRE: (note2)
+ s=note1 + note2
+ AFFICHER :(s)
+ m=s/2
+ AFFICHER:(m)
+ FIN
+ */
+ #include<stdio.h>
+  int main()
+  {
+   int note1, note2, s, m;
+   printf("Entrer la valeur de note1\n");
+   scanf("%d", &note1);
+   printf("Entrer la valeur de note2\n");
+   scanf("%d", &note2);
+   s=note1 + note2;
+   printf("La somme est %d\n", s);
+   m=s/2;
+   printf("La moyenne est %d\n", m);
+  return 0 ;
+  }

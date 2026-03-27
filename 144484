@@ -1,0 +1,30 @@
+/*variable 
+ n:réel 
+ DEBUT
+ AFFICHER : "entre la valeur de n"
+ LIRE (n)
+ SI (n>=0) ALORS
+ AFFICHER :"c'est un nombre positif"
+ FIN SI
+ SINON
+ AFFICHER :"c'est un nombre négatif"
+ FIN
+*/
+#include<stdio.h>
+  int main() 
+    {
+     int n; 
+     printf("Entez la valeur de n\n");
+     scanf("%d", &n);
+     if(n>=0)
+      {
+       printf("c'est un nombre positif\n"); 
+      }
+     else 
+      {
+       printf("c'est un nombre négatif\n"); 
+      }
+     return 0; 
+    }
+    
+      

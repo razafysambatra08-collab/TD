@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int a ;int b; int c; double delta; double x1; double x2; double x; double reel; double im;
+  while(char a,b,c)
+  {
+    printf("Enter la valeur de a:");
+    scanf("%d", &a);
+    printf("\nEntrer la valeur de b:");
+    scanf("%d", &b);
+    printf("\nEntrer la valeur de c:");
+    scanf("%d", &c);
+  }
+  if(a==0 && b!=0)
+  {
+    printf("il existe une solution:\n");
+    x=(-c)/b;
+    printf("x=%f",x);
+  }
+  else if(a==0 && b==0)
+  {
+   printf("la solution est vide!");
+  }
+  delta = (b*b)-(4*a*c);
+  else if( delta>0)
+  {
+    printf("il existe deux solutions :\n");
+    x1 = (-b+sqrt(delta))/(2*a);
+    x2 = (-b-sqrt(delta))/(2*a);
+    printf("x1=%f et x2=%f", x1, x2);
+  }
+  else if( delta==0)
+  {
+    printf("il existe une solution double:\n");
+    x= (-b)/(2*a);
+    printf("x1=x2= %f\n",x);
+  }
+ else 
+  {
+    printf("il existe deux solutions opposées\n");
+    reel = (-b)/(2*a);
+    im = (sqrt(-delta))/(2*a);
+    printf("x1 = %f + %f i ", reel, im);
+    printf("x2 = %f - %f i", reel, im);
+  }
+ return 0;
+ }
+    

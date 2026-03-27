@@ -1,0 +1,38 @@
+/*Variables
+i:entier, v[3]: tableau réel, max:entier
+DEBUT
+AFFICHER:"Entrer la valeur v[0]"
+LIRE : v[0]
+AFFICHER :"Entrer la valeur v[1]"
+LIRE:"Entrer la valeur v[1]
+AFFICHER: "Entrer la valeur v[2]
+LIRE: v[2]
+max=v[0]
+Pour (i=1; i<3; i=i+1)
+Si (max<v[i]) ALORS
+max=v[i]
+AFFICHER:(max)
+fin Pour
+Fin Si
+fin
+*/
+#include<stdio.h>
+  int main ()
+  {
+   int i, v[3], max;
+   printf("Entrer la valeur v[0]\n");
+   scanf("%d", &v[0]);
+   printf("Entrer la valeur de v[1]\n");
+   scanf("%d", &v[1]);
+   printf("Entrer la valeur de v[2]\n");
+   scanf("%d", &v[2]);
+   max=v[0];
+   for (i=1; i<3; (i++))
+   {
+    if (max<v[i])
+     {
+      printf("max=%d\n", v[i]);
+     }
+   }
+   return 0;
+  }

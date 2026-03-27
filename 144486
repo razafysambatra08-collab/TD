@@ -1,0 +1,41 @@
+/* variable:
+A:réel , B:réel , C : réel , T : réel
+DEBUT
+AFFICHER:"entrer la valeur de A"
+LIRE (A)
+AFFICHER:"entrer la valeur de B"
+LIRE (B)
+T=A
+A=B
+B=T
+FIN
+AFFICHER:"entrer la valeur de C"
+LIRE (C)
+T=A
+A=C
+C=B
+B=T
+FIN
+*/
+#include<stdio.h>
+  int main ()
+  {
+   int A, B, C, T;
+   printf("Entrer la valeur de A\n");
+   scanf("%d", &A);
+   printf("Entrer la valeur de B\n");
+   scanf("%d", &B);
+   T=A;
+   A=B;
+   B=T;
+   printf("A=%d , B=%d \n", B, A);
+   printf("Entrer la valeur de C\n");
+   scanf("%d", &C);
+   T=A;
+   A=C;
+   C=B;
+   B=T;
+   printf("A=%d , B=%d , C=%d\n", C , A, B);
+   return 0;
+  }
+   
